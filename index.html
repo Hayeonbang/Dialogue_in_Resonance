@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialogue in Resonance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dialogue in Resonance</h1>
+            <h2>An Interactive Music Piece for the Piano and Real-Time Automatic Transcription System (ICMC 2025) </h2>
+            <div class="authors">
+                <p>Hayeon Bang, Taegyun Kwon, Juhan Nam</p>
+                <p class="affiliation">Graduate School of Culture Technology, KAIST</p>
+            </div>
+        </header>
+        
+        <div class="video-container">
+            <!-- Replace with your actual YouTube embed code -->
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Dialogue in Resonance Performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <section>
+            <h3>Abstract</h3>
+            <p>This paper presents <em>Dialogue in Resonance</em>, an interactive music piece for a human pianist and a computer-controlled piano that integrates real-time automatic music transcription into a score-driven framework. Unlike previous approaches that primarily focus on improvisation-based interactions, our work establishes a balanced framework that combines composed structure and dynamic interaction. Through real-time automatic transcription as its core mechanism, the computer interprets and responds to the human performer's input in real time, creating a musical dialogue that balances compositional intent with live interaction including unpredictability.</p>
+        </section>
+        
+        <section>
+            <h3>System Overview</h3>
+            <p>The system architecture consists of two main components: a Python-based online AMT (Automatic Music Transcription) model that processes the audio in real time, and a Max/MSP interface that provides MIDI processing functions and real-time adjustments. The AMT model can achieve an onset F1 score of over 95% in ideal conditions, with an approximate latency of 350ms.</p>
+            
+            <div class="system-diagram">
+                <img src="/api/placeholder/800/500" alt="System diagram showing the pipeline from Piano 1 through the AMT system to Piano 2" />
+                <div class="figure-caption">Figure 1: Stage and system setup of Dialogue in Resonance</div>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Performance Preparation</h3>
+            <p>The piece was designed with two pianos standing side by side, engaging in an interactive musical dialogue. The human pianist follows a score-driven structure, while the computer-controlled piano "listens" to the performance, analyzing, interpreting, and responding to it in real time. Through approximately 15 rehearsals and multiple system refinements, a balance was achieved between compositional structure and dynamic interactivity.</p>
+            
+            <div class="figures">
+                <div class="figure">
+                    <img src="/api/placeholder/400/300" alt="Score excerpt from Dialogue in Resonance" />
+                    <div class="figure-caption">Figure 2: Score excerpt showing both piano parts</div>
+                </div>
+                <div class="figure">
+                    <img src="/components/system.png" alt="Stage setup for performance" />
+                    <div class="figure-caption">Figure 3: Stage setup with human pianist and Disklavier</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="score-section">
+            <h3>Full Score</h3>
+            <p>The composition employs tonal structures and harmonies imbued with a mystical character to reflect the enigmatic dialogue between human and machine. The score contains detailed instructions for both the human pianist and the computer operator.</p>
+            <a href="#" class="pdf-button">Download Full Score (PDF)</a>
+        </section>
+        
+        <footer>
+            <p>© 2025 Hayeon Bang, Taegyun Kwon, Juhan Nam | Graduate School of Culture Technology, KAIST</p>
+        </footer>
+    </div>
+</body>
+</html>

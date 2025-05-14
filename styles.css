@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 60px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 10px;
+    letter-spacing: 0.4px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.authors {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.authors p {
+    margin-bottom: 5px;
+}
+
+.affiliation {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #111;
+    margin: 15px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+section {
+    margin: 60px 0;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.figures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.figure {
+    background: #111;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.figure-caption {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #aaa;
+    text-align: center;
+}
+
+.score-section {
+    text-align: center;
+}
+
+.pdf-button {
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.pdf-button:hover {
+    background: #fff;
+    color: #000;
+}
+
+footer {
+    margin-top: 80px;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.system-diagram {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .figures {
+        grid-template-columns: 1fr;
+    }
+    
+    header {
+        text-align: center;
+        padding: 60px 0 40px;
+    }
+    
+    .authors::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .authors {
+        flex-direction: column;
+        align-items: center;
+    }
+}
