@@ -44,6 +44,7 @@ h2 {
 
 .authors p {
     margin-bottom: 5px;
+    font-weight: 300;
 }
 
 .affiliation {
@@ -76,7 +77,7 @@ section {
 
 h3 {
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 00;
     margin-bottom: 20px;
     border-bottom: 1px solid #333;
     padding-bottom: 10px;
@@ -84,7 +85,7 @@ h3 {
 
 p {
     margin-bottom: 20px;
-    font-weight: 300;
+    font-weight: 350;
 }
 
 .figures {
@@ -95,16 +96,19 @@ p {
 }
 
 .figure {
-    background: #111;
+    background: #000000;
     padding: 20px;
     border-radius: 4px;
 }
 
 .figure img {
     width: 100%;
+    max-width: 500px; /* 원하는 최대 너비 */
     height: auto;
     display: block;
+    margin: 0 auto; /* 가운데 정렬 */
 }
+
 
 .figure-caption {
     margin-top: 15px;
@@ -143,10 +147,6 @@ footer {
     color: #666;
 }
 
-.system-diagram {
-    max-width: 800px;
-    margin: 40px auto;
-}
 
 @media (max-width: 768px) {
     h1 {
@@ -171,4 +171,133 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+}
+
+.question {
+    font-weight: 600;
+    margin-top: 1.5em;
+    color: #fffafa;
+    font-size: 1.2em;
+  }
+  
+  .answer {
+    background-color: #000000;
+    padding: 12px 18px;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    border-left: 4px solid #ddd;
+    font-size: 1.0em;
+    line-height: 1.65;
+  }
+  
+  .answer b {
+    display: inline-block;
+    margin-top: 0.6em;
+    color: #f6f3f3;
+    font-weight: 800;
+  }
+  
+  .subsection b:first-of-type {
+    font-size: 1.3em;
+    font-weight: 1800;
+    color: #f4f2f2;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    color: #ffffff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.3em;
+    margin-top: 3em;
+  }
+  
+  .interviewee-info {
+    background-color: #070707;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 0.95em;
+    color: #ffffff;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+/*   
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+  } */
+/*   
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 20px 15px;
+    }
+  
+    .question {
+      font-size: 1em;
+    }
+  
+    .answer {
+      font-size: 0.95em;
+    }
+  
+    h3 {
+      font-size: 1.3em;
+    }
+  } */
+  .speaker {
+    margin-top: 1em;
+    line-height: 1.7;
+    font-size: 1.0em;
+    color: #eee;
+  }
+  
+  .label {
+    display: inline-block;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.2em;
+  }
+
+  .back-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+.tab-buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .tab-button {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    padding: 15px 25px;
+    margin: 0 5px;
+    border: none;
+    background-color: #444;
+    cursor: pointer;
+    font-size: 1.4rem;
+  }
+  
+  .tab-button.active {
+    background-color: #f8f5f5;
+    color: black;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+.tab-content.active {
+    display: block;
 }
